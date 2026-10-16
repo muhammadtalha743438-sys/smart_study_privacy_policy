@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Privacy Policy - Smart Study</title>
+    <style>
+        :root {
+            --primary: #1e40af;
+            --primary-dark: #1e3a8a;
+            --text-main: #1e293b;
+            --text-muted: #64748b;
+            --bg-page: #f8fafc;
+            --bg-card: #ffffff;
+            --border: #e2e8f0;
+        }
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            background-color: var(--bg-page);
+            color: var(--text-main);
+            line-height: 1.65;
+            padding: 32px 16px;
+        }
+        .container {
+            max-width: 840px;
+            margin: 0 auto;
+            background: var(--bg-card);
+            padding: 40px;
+            border-radius: 16px;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
+            border: 1px solid var(--border);
+        }
+        .header {
+            border-bottom: 2px solid var(--border);
+            padding-bottom: 24px;
+            margin-bottom: 32px;
+        }
+        .badge {
+            display: inline-block;
+            background-color: #dbeafe;
+            color: var(--primary);
+            font-weight: 600;
+            font-size: 13px;
+            padding: 4px 12px;
+            border-radius: 9999px;
+            margin-bottom: 12px;
+        }
+        h1 {
+            font-size: 32px;
+            color: var(--primary-dark);
+            margin-bottom: 8px;
+        }
+        .meta {
+            color: var(--text-muted);
+            font-size: 14px;
+        }
+        h2 {
+            font-size: 20px;
+            color: var(--primary);
+            margin-top: 28px;
+            margin-bottom: 12px;
+            border-left: 4px solid var(--primary);
+            padding-left: 10px;
+        }
+        p {
+            margin-bottom: 16px;
+            font-size: 15px;
+        }
+        ul {
+            margin-left: 20px;
+            margin-bottom: 16px;
+        }
+        li {
+            margin-bottom: 8px;
+            font-size: 15px;
+        }
+        .callout {
+            background-color: #f1f5f9;
+            border-left: 4px solid var(--primary);
+            padding: 16px;
+            border-radius: 8px;
+            margin: 20px 0;
+            font-size: 14px;
+        }
+        .contact-box {
+            background-color: #eff6ff;
+            border: 1px solid #bfdbfe;
+            border-radius: 12px;
+            padding: 20px;
+            margin-top: 30px;
+        }
+        .contact-box a {
+            color: var(--primary);
+            font-weight: 600;
+            text-decoration: none;
+        }
+        .contact-box a:hover {
+            text-decoration: underline;
+        }
+        footer {
+            margin-top: 40px;
+            text-align: center;
+            font-size: 13px;
+            color: var(--text-muted);
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <span class="badge">Google Play Compliance</span>
+            <h1>Privacy Policy for Smart Study</h1>
+            <div class="meta">
+                <strong>Application:</strong> Smart Study<br>
+                <strong>Package Name:</strong> <code>com.aistudio.smartstudy.aiqpmz</code><br>
+                <strong>Effective Date:</strong> October 16, 2026
+            </div>
+        </div>
+
+        <p>This Privacy Policy describes how <strong>Smart Study</strong> ("we", "our", or "the App") handles information when you use our Android mobile application. We are committed to safeguarding your privacy and ensuring transparency regarding our data practices.</p>
+
+        <h2>1. Information We Collect and Process</h2>
+        <p>Smart Study is designed as a privacy-conscious study companion. We collect and store minimal data necessary to provide intelligent tutoring features:</p>
+        <ul>
+            <li><strong>User Study Queries and Chat History:</strong> The questions, study prompts, subject preferences, and chat messages you enter into the application.</li>
+            <li><strong>Saved Notes and Bookmarks:</strong> Key concepts, study cards, and formula summaries that you explicitly choose to bookmark or save within the app.</li>
+            <li><strong>Optional API Configuration:</strong> If you provide a custom Google Gemini API key or select preferred AI models, this configuration is stored locally on your device.</li>
+        </ul>
+
+        <h2>2. Data Storage and Local Persistence</h2>
+        <div class="callout">
+            <strong>On-Device Local Storage:</strong> All your conversation history, study sessions, and notes are stored strictly locally on your device using an encrypted/sandboxed SQLite Room database. We do not operate a proprietary remote server or database to harvest your private study records.
+        </div>
+        <p>Your local study history never leaves your device unless a query is sent to the AI service for processing.</p>
+
+        <h2>3. Third-Party AI Services (Google Gemini API)</h2>
+        <p>To provide real-time study tutoring, explanations, and quiz generation, Smart Study transmits your study queries and relevant preceding conversation context to Google's <strong>Gemini API</strong> (Google Generative AI).</p>
+        <ul>
+            <li>Data transmitted includes your current prompt, subject context, and relevant recent messages within that study thread to ensure contextual continuity.</li>
+            <li>This processing is governed by <a href="https://policies.google.com/privacy" target="_blank" rel="noopener">Google's Privacy Policy</a> and the <a href="https://ai.google.dev/gemini-api/terms" target="_blank" rel="noopener">Google APIs Terms of Service</a>.</li>
+            <li>We do not sell, rent, or trade your chat data to any third-party advertisers or data brokers.</li>
+        </ul>
+
+        <h2>4. Device Permissions</h2>
+        <p>Smart Study requires only the following standard permission:</p>
+        <ul>
+            <li><strong><code>android.permission.INTERNET</code>:</strong> Required exclusively to communicate with the Google Gemini API endpoint to receive AI-generated study responses. We do not access location, contacts, camera, or personal media files.</li>
+        </ul>
+
+        <h2>5. User Data Control and Deletion</h2>
+        <p>You have full autonomy over your data at all times:</p>
+        <ul>
+            <li><strong>Delete Individual Sessions:</strong> You can delete any individual chat thread from the navigation menu at any time.</li>
+            <li><strong>Delete Saved Notes:</strong> You can review and delete any saved note or flashcard from the Study Notes screen.</li>
+            <li><strong>Clear All App Data:</strong> You can clear all stored messages, sessions, and settings using the "Clear All Data" button in the in-app Privacy Policy screen or via Android System Settings &gt; Apps &gt; Smart Study &gt; Storage &gt; Clear Storage.</li>
+        </ul>
+
+        <h2>6. Children's Privacy (COPPA &amp; GDPR Compliance)</h2>
+        <p>Smart Study provides educational study assistance. We do not knowingly collect personal identifiable information (such as names, addresses, phone numbers, or social security numbers) from children under the age of 13 (or under the age of 16 in the European Economic Area). If you are a parent or guardian and believe your child has submitted personal details, please contact us so we can guide you in removing local data.</p>
+
+        <h2>7. Security</h2>
+        <p>We value your trust. All network transmissions to the Gemini API occur over secure, encrypted HTTPS protocols (TLS 1.2/1.3). On-device data is protected by the Android sandbox architecture preventing other unauthorized apps from accessing your local database.</p>
+
+        <h2>8. Changes to This Privacy Policy</h2>
+        <p>We may update our Privacy Policy periodically to reflect app updates or regulatory requirements. Any modifications will be posted here with an updated "Effective Date" and updated within the in-app Privacy Policy screen.</p>
+
+        <div class="contact-box">
+            <h2>9. Contact Us</h2>
+            <p>If you have questions, feedback, or concerns regarding this Privacy Policy or your data, please contact the developer at:</p>
+            <p><strong>Email:</strong> <a href="mailto:muhammadtalha743438@gmail.com">muhammadtalha743438@gmail.com</a></p>
+            <p><strong>Developer:</strong> Smart Study Developer Team</p>
+        </div>
+
+        <footer>
+            &copy; 2026 Smart Study. All rights reserved.
+        </footer>
+    </div>
+</body>
+</html>
